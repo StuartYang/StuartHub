@@ -314,38 +314,8 @@ sudo vim /etc/ssh/sshd_config #搜索PasswordAuthentication，把yes改成no
 
 推荐阅读：
 
-[
+- https://blog.laoda.de/archives/dd
 
-服务器自带的系统不喜欢？那就自己DD一个船新的系统吧！-我不是咕咕鸽
+- https://blog.laoda.de/archives/how-to-secure-a-linux-server
 
-site.seo.description
-
-![](https://blog.laoda.de/upload/guguge.webp)我不是咕咕鸽-VPS折腾不完全记录咕咕
-
-![](https://blog.laoda.de/upload/guguge.webp)
-
-](https://blog.laoda.de/archives/dd)
-
-[
-
-保护好你的小鸡！保姆级服务器安全教程！-我不是咕咕鸽
-
-site.seo.description
-
-![](https://blog.laoda.de/upload/guguge.webp)我不是咕咕鸽-VPS折腾不完全记录咕咕
-
-![](https://blog.laoda.de/upload/guguge.webp)
-
-](https://blog.laoda.de/archives/how-to-secure-a-linux-server)
-
-[
-
-【Docker系列】一个反向代理神器——Nginx Proxy Manager-我不是咕咕鸽
-
-site.seo.description
-
-![](https://blog.laoda.de/upload/guguge.webp)我不是咕咕鸽-VPS折腾不完全记录咕咕
-
-![](https://blog.laoda.de/upload/guguge.webp)
-
-](https://blog.laoda.de/archives/nginxproxymanager)
+- https://blog.laoda.de/archives/nginxproxymanager
