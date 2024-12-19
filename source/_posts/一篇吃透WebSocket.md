@@ -238,6 +238,14 @@ public class WebSocketConfig {
 | 协议支持   | TCP/UDP     | 自定义协议（基于Http/1.1或者更高） |
 | 开发复杂度  | 高           | 低                     |
 | 使用场景   | 游戏，底层网络通讯协议 | 实时推送，聊天，在线协做工具        |
-如果开发浏览器应用或实时性要求高的服务，**WebSocket** 是首选；如果需要完全控制通信流程和协议，选择 **Socket**。
 
 
+- 如果开发浏览器应用或实时性要求高的服务，**WebSocket** 是首选；如果需要完全控制通信流程和协议，选择 **Socket**。
+
+
+# 参考资料
+
+- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
+- [WebSocket 协议](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket)
+- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
+- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
