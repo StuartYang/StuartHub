@@ -15,11 +15,11 @@ categories: [网络协议]
 
 # WebSocket 诞生背景
 
-早期，很多网站为了实现推送技术，所用的技术都是轮询（也叫短轮询）。轮询是指由浏览器每隔一段时间向服务器发出 HTTP 请求，然后服务器返回最新的数据给客户端。
+早期，很多网站为了实现推送技术，所用的技术都是轮询 。轮询是指由浏览器每隔一段时间向服务器发出 HTTP 请求，然后服务器返回最新的数据给客户端。
 
 **常见的轮询方式分为短轮询与长轮询，它们的区别如下图所示：**
 
-![mermaid-ai-diagram-2024-12-19-110504.png](https://img.stuarthub.us.kg/2024/12/410df9cf7e9abf9371f2cdfc6b186a7b.png)
+![短轮询与长轮询区别.png](https://img.stuarthub.us.kg/2024/12/410df9cf7e9abf9371f2cdfc6b186a7b.png)
 
 
 ​
@@ -224,7 +224,7 @@ public class WebSocketConfig {
 - WebSocket 在<mark style="background: #FFB8EBA6;">握手成功后，就是全双工的 TCP 通道</mark>，数据可以主动从服务端发送到客户端。
 
 
-![mermaid-ai-diagram-2024-12-19-110620.png](https://img.stuarthub.us.kg/2024/12/65ae6345a2b5115660c97d9b4a673df3.png)
+![WebSocket与长轮询区别.png](https://img.stuarthub.us.kg/2024/12/65ae6345a2b5115660c97d9b4a673df3.png)
 
 ​
 
@@ -245,7 +245,5 @@ public class WebSocketConfig {
 
 # 参考资料
 
-- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
 - [WebSocket 协议](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket)
-- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
-- [WebSocket 教程](https://www.runoob.com/w3cnote/websocket-tutorial.html)
+- [万字长文，一篇吃透WebSocket：概念、原理、易错常识、动手实践](https://www.cnblogs.com/imteck4713/p/15392682.html)
