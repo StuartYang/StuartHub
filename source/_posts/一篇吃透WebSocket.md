@@ -19,7 +19,7 @@ categories: [网络协议]
 
 **常见的轮询方式分为短轮询与长轮询，它们的区别如下图所示：**
 
-![短轮询与长轮询区别.png](https://img.stuarthub.us.kg/2024/12/410df9cf7e9abf9371f2cdfc6b186a7b.png)
+![短轮询与长轮询区别.png](https://img.stuartyang.site/2024/12/410df9cf7e9abf9371f2cdfc6b186a7b.png)
 
 
 ​
@@ -224,7 +224,7 @@ public class WebSocketConfig {
 - WebSocket 在<mark style="background: #FFB8EBA6;">握手成功后，就是全双工的 TCP 通道</mark>，数据可以主动从服务端发送到客户端。
 
 
-![WebSocket与长轮询区别.png](https://img.stuarthub.us.kg/2024/12/65ae6345a2b5115660c97d9b4a673df3.png)
+![WebSocket与长轮询区别.png](https://img.stuartyang.site/2024/12/65ae6345a2b5115660c97d9b4a673df3.png)
 
 ​
 

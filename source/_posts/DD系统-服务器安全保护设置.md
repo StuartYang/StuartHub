@@ -97,7 +97,7 @@ vim /etc/ssh/sshd_config
 
 命令行`/Port 22`找到22端口，如果这一行开头有个#，证明这一行【不生效】（被注释掉了），直接 把#删掉就好。
 
-![](https://img.stuarthub.us.kg/2024/04/6f8d04edec5c673dbff3e3d2e8318b9f.png)
+![](https://img.stuartyang.site/2024/04/6f8d04edec5c673dbff3e3d2e8318b9f.png)
 
 1. 然后`esc` `wq` ，退出。
 2. 最后要做的事，是重启 ssh 服务，使变更生效
@@ -114,7 +114,7 @@ sudo service sshd restart
 
 注意：为了保证你不会失联，请不要关闭当前的ssh登录窗口！而是另外开一个窗口来测试！
 
-![](https://img.stuarthub.us.kg/2024/04/22bcc57709b470fa5d2faf983b772c80.png)
+![](https://img.stuartyang.site/2024/04/22bcc57709b470fa5d2faf983b772c80.png)
 
 ## 禁止ping
 
@@ -124,7 +124,7 @@ sudo vim /etc/ufw/before.rules
 
 搜索：`echo-request`，把`ACCEPT`改成`DROP`，然后保存
 
-![](https://img.stuarthub.us.kg/2024/04/636b29fe2c420c7fa85423114d2294a1.png)
+![](https://img.stuartyang.site/2024/04/636b29fe2c420c7fa85423114d2294a1.png)
 
 ## 禁止暴力破解
 
@@ -153,7 +153,7 @@ maxretry = 5  #最大尝试5次
 bantime = -1  # 打入黑名单
 ```
 
-![](https://img.stuarthub.us.kg/2024/04/fe1e427bc1171da9bab3ce3f41196548.png)
+![](https://img.stuartyang.site/2024/04/fe1e427bc1171da9bab3ce3f41196548.png)
 
 ```shell
 sudo service fail2ban restart #重启
@@ -237,7 +237,7 @@ visudo
 
 # 找到`#User privilege specification`,然后插入`amin ALL=(ALL) NOPASSWD: ALL` ,最后保存退出。
 
-![c6de5da5818b97a70d466db2c0bc365c](https://img.stuarthub.us.kg/2024/04/c6de5da5818b97a70d466db2c0bc365c.png)
+![c6de5da5818b97a70d466db2c0bc365c](https://img.stuartyang.site/2024/04/c6de5da5818b97a70d466db2c0bc365c.png)
 
 注意：
 
@@ -299,7 +299,7 @@ chmod 600 ~/.ssh/authorized_keys
 sudo vim /etc/ssh/sshd_config #搜索PasswordAuthentication，把yes改成no
 ```
 
-![](https://img.stuarthub.us.kg/2024/04/d5440a56dd39194f7d6b4f5010be47a9.png)
+![](https://img.stuartyang.site/2024/04/d5440a56dd39194f7d6b4f5010be47a9.png)
 
 这样以来，每次登陆，我们用上传公钥，就能实现无密码登陆了 。
 
