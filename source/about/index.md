@@ -14,7 +14,33 @@ layout: about
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="ghttps://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake.svg" />
+  <img id="theme-image" alt="github-snake" src="https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake.svg" />
 </picture>
+
+<script>
+    // 获取图片元素
+    const themeImage = document.getElementById('theme-image');
+
+    // 根据 data-user-color-scheme 更新图片
+    function updateImageBasedOnTheme() {
+      const theme = document.documentElement.getAttribute('data-user-color-scheme');
+      themeImage.src = theme === 'dark' ? 'https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake-dark.svg' : 'https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake.svg';
+    }
+
+    // 监听 data-user-color-scheme 的变化
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-user-color-scheme') {
+          updateImageBasedOnTheme(); // 更新图片
+        }
+      });
+    });
+
+    // 开始观察
+    observer.observe(document.documentElement, {
+      attributes: true, // 监听属性变化
+    });
+
+    // 初始化时检查主题
+    updateImageBasedOnTheme();
+  </script>
