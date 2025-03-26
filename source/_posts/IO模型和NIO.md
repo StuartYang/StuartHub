@@ -4,7 +4,7 @@ mermaid: true
 math: false
 comments: true
 hide: false
-excerpt: 
+excerpt: 一个程序执行超越本程序之外的功能，就会涉及到操作系统用户态到核心态的切换。那什么是本程序范围内的功能呢？例如：计算，内存访问，函数调用等就属于范围内的功能。那么结合本文要说的I/O操作，如果一个程序要进行I/O操作，例如：微信网络传输一个文件，Adobe加载本地一个文件等，都会涉及操作系统用户态到核心态的切换。所以I/O模型的核心确实是内核空间与用户空间之间的数据交互方式问题。
 date: 2025-03-26 22:09:36
 tags: [Netty, NIO]
 categories: Netty
