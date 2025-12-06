@@ -12,7 +12,6 @@ layout: about
 - GitHub：https://github.com/StuartYang
 
 
-
 <script>
     // 获取图片元素
     const themeImage = document.getElementById('theme-image');
