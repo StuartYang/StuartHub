@@ -13,10 +13,6 @@ layout: about
 
 
 
-<picture>
-  <img id="theme-image" alt="github-snake" src="https://raw.githubusercontent.com/StuartYang/Platane/output/github-contribution-grid-snake.svg" />
-</picture>
-
 <script>
     // 获取图片元素
     const themeImage = document.getElementById('theme-image');
